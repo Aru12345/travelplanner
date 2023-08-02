@@ -5,17 +5,23 @@ import Rating from "@mui/material";
 import { GoogleMap } from "@react-google-maps/api";
 
 
-const Map = () =>{
+const Map = ({setCoordinates,setBounds,coordinates}) =>{
     const isMobile=useMediaQuery('(min-width:600px')
 
-    const coordinates ={lat:0,lng:0};
     return(
         <div  style={{ height: "400px", width: "100%" }}>
            
             <GoogleMapReact
-         bootstrapURLKeys={{key }} 
+         bootstrapURLKeys={{key :''}} 
         defaultCenter={coordinates}
         defaultZoom={14}
+        center={coordinates}
+        margin={[50,50,50,50]}
+        options={''}
+        onChange={(e)=>{
+            setCoordinates({lat:e.center.lat,lng:e.center.lng})
+            setBounds({ne:e.marginBounds.ne,sw:e.marginBounds.sw})
+        }}
       >
         
       </GoogleMapReact>

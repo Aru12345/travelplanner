@@ -1,18 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import { CircularProgress,Grid,Typography,InputLabel,MenuItem,FormControl,Select } from "@mui/material";
-
-const List = () =>{
+import PlaceDetails from "../PlaceDetails/PlaceDetails";
+const List = ({places}) =>{
 
     const[type,setType]=useState('hotels');
-    const[rating,setRating]=useState('');
+    const[rating,setRating]=useState('0');
+    
     return(
         <div>
             <Typography variant="h4">
                 Hotels And Attractions!
 
             </Typography>
-            <FormControl >
+            <FormControl  style={{  minWidth: 120, marginBottom: '30px' }}>
                 <InputLabel>
                 <Select value={type} onChange={(e)=>{setType(e.target.value)}}>
                     <MenuItem value="hotels">Hotels</MenuItem>
@@ -23,7 +24,7 @@ const List = () =>{
                 </InputLabel>
 
             </FormControl>
-            <FormControl >
+            <FormControl style={{  minWidth: 120, marginBottom: '30px' }}>
                 <InputLabel>
                 <Select value={rating} onChange={(e)=>{setRating(e.target.value)}}>
                     <MenuItem value={0}>All</MenuItem>
@@ -38,6 +39,15 @@ const List = () =>{
                 </InputLabel>
 
             </FormControl>
+            <Grid container spacing={3}>
+                {places?.map((place,i)=>(
+                    <Grid item  key={i} xs={12} >
+                        <PlaceDetails  place={place} />
+
+                    </Grid>
+                ))}
+
+            </Grid>
         </div>
     )
 }
