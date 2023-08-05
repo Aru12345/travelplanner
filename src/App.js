@@ -20,8 +20,7 @@ const App = () => {
     );
   }, []);
   useEffect(() => {
-    if (bounds?.sw && bounds?.ne) {
-      // Add a check here to see if bounds is not null
+    if (bounds) {
       getPlacesData(bounds.sw, bounds.ne).then((data) => {
         setPlaces(data);
       });

@@ -9,14 +9,12 @@ export const getPlacesData = async (sw, ne) => {
     } = await axios.get(URL, {
       params: {
         bl_latitude: sw.lat,
+
+        tr_longitude: ne.lng,
         bl_longitude: sw.lng,
-        tr_longitude: ne.lat,
-        tr_latitude: ne.lng,
+        tr_latitude: ne.lat,
       },
-      headers: {
-        "X-RapidAPI-Key": "",
-        "X-RapidAPI-Host": "",
-      },
+      headers: {},
     });
 
     return data;
