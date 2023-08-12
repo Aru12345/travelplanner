@@ -4,10 +4,23 @@ import Map from "./Map";
 function Nomad(){
     return(
         <>
-        <h1>Nomad</h1>
-        <CardList />
-        <Search />
-        <Map />
+        <div className="flex">
+       <div className="w-[40%] p-4" >
+       <div className="mb-4">
+          <CardList />
+          <Search />
+        </div>
+       </div>
+       
+
+<div className="w-[60%] p-4 ml-17">
+<Map /> 
+</div>
+       
+       
+
+        </div>
+
        
         </>
     )
