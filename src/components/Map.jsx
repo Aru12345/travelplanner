@@ -4,9 +4,10 @@ import '../index.css'
 
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 const containerStyle = {
-    width: "90%",
-    height: "550px",
-    margin:"3% 0 3% 8%",
+    width: "97%",
+    height: "650px",
+    marginTop: "3%",
+    marginLeft:"1%"
     
   
   };
