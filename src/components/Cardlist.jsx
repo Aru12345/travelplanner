@@ -1,10 +1,12 @@
 import Card from "./Card";
 function CardList({ places }) {
+   
     return (
-      <div>
+      <div className=" "> 
         
         {places.map((place, i) => (
-          <Card place={place} key={i} />
+            
+          <Card  place={place} key={i} />
         ))}
       </div>
     );
