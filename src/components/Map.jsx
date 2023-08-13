@@ -22,7 +22,7 @@ function Map(){
    return(
     <div className="">
       <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-        <GoogleMap  mapContainerStyle={containerStyle}  options={{mapTypeControl:false,fullscreenControl:false,streetViewControl:false,keyboardShortcuts:false,}} center={center} zoom={10}>
+        <GoogleMap  mapContainerStyle={containerStyle}  options={{mapTypeControl:false,fullscreenControl:false,streetViewControl:false,keyboardShortcuts:false,}} center={center} zoom={14}>
  
         </GoogleMap>
       </LoadScript>

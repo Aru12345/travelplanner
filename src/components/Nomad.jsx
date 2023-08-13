@@ -1,14 +1,15 @@
-import CardList from "./Carlist";
+import CardList from "./Cardlist";
 import Search from "./Search";
 import Map from "./Map";
-function Nomad(){
+function Nomad({places}){
     return(
         <>
         <div className="flex flex-col md:flex-row ">
        <div className="w-[40%] md:w-2/5 p-4  " >
        <div className="mb-4">
-          <CardList />
-          <Search />
+       <Search />
+          <CardList places={places}/>
+         
         </div>
        </div>
        
