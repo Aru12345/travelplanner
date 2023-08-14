@@ -23,7 +23,10 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} exact />
-          <Route path="/nomad" element={<Nomad places={places} />} />
+          <Route
+            path="/nomad"
+            element={<Nomad places={places} setPlaces={setPlaces} />}
+          />
           <Route path="/comparison" element={<Comparision />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>

@@ -1,35 +1,48 @@
-"use Strict"
 import React from "react";
-import '../index.css'
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
 const containerStyle = {
-    width: "97%",
-    height: "680px",
-    marginTop: "3%",
-    marginLeft:"1%"
-    
-  
-  };
-  
-  const center = {
-    lat: 37.7749,
-    lng: -122.4194
-  };
-  
-function Map(){
+  width: "97%",
+  height: "680px",
+  marginTop: "3%",
+  marginLeft: "1%",
+};
 
-   return(
+const center = {
+  lat: 20,
+  lng: 10, 
+};
+
+function Map({ places }) {
+  return (
     <div className="">
       <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-        <GoogleMap  mapContainerStyle={containerStyle}  options={{mapTypeControl:false,fullscreenControl:false,streetViewControl:false,keyboardShortcuts:false,}} center={center} zoom={14}>
- 
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          options={{
+            mapTypeControl: false,
+            fullscreenControl: false,
+            streetViewControl: false,
+            keyboardShortcuts: false,
+          }}
+          center={center}
+          zoom={2}
+        >
+          {places?.map((place, i) => (
+            <Marker
+              key={i}
+              position={{ lat: Number(place.latitude), lng: Number(place.longitude) }}
+              icon={{
+                url: place.image,
+                scaledSize: new window.google.maps.Size(50, 55), 
+              }}
+              title={place.name} 
+            />
+          ))}
         </GoogleMap>
       </LoadScript>
-
     </div>
-        
-
-    )
+  );
 }
+
 export default Map;

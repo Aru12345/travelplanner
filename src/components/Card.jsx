@@ -17,6 +17,7 @@ function Card ({place}){
         <h2>Tempreture:{place.temperatureC} {place.weather_emoji}</h2>
         <h2>Cost per Head$:{place.cost_for_local_in_usd}</h2>
         <h2>Air Quality: {place.air_quality_score}</h2>
+        <h2>Safety Level: {place.safety_level}</h2>
        
         </div>
         </>

@@ -1,7 +1,7 @@
 import CardList from "./Cardlist";
 import Search from "./Search";
 import Map from "./Map";
-function Nomad({places}){
+function Nomad({places, setPlaces}){
     return(
         <>
         <div className="flex flex-col md:flex-row ">
@@ -14,7 +14,7 @@ function Nomad({places}){
           </div>
          </div>
           <div className="w-[60%] pl-3% ml-2% m:w-[80%] sm:ml-[10%]  sm:h-[40%] max-sm:w-[90%] max-sm:ml-[4%]   ">
-            <Map /> 
+            <Map  places={places}  setPlaces={setPlaces} /> 
            </div>
        </div>
      </>
