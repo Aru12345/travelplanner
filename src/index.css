@@ -10,3 +10,15 @@
     rgb(255, 255, 255) 119.7%
   );
 }
+
+.highlight-card {
+  border: 2px solid yellow; /* Example highlight style */
+}
+
+.bg-image {
+  background-image: url("mediaa/home.jpeg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  /* Other background properties can be added here */
+}

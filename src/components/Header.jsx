@@ -13,8 +13,8 @@ const Header = () =>{
           <a className="text-white my-1 p-3 text-lg font-bold" href="/nomad">
             Explore
           </a>
-          <a className="text-white my-1 p-3 text-lg font-bold" href="/comparison">
-            Comparison
+          <a className="text-white my-1 p-3 text-lg font-bold" href="/currency">
+           Currency Converter
           </a>
         </div>
 

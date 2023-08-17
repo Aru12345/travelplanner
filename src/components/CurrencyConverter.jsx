@@ -1,8 +1,8 @@
- function Comparision(){
+ function CurrencyConverter(){
     return(
         <>
         <h1>Comparison</h1>
         </>
     )
  }
- export default Comparision;
+ export default CurrencyConverter;

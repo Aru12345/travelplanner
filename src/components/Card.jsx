@@ -1,8 +1,22 @@
-function Card ({place}){
+import { useEffect,useRef } from "react";
+import '../index.css'
+function Card ({place,childClicked,cardId}){
+    const cardRef = useRef(null);
+    useEffect(() => {
+        if (childClicked === place.id) {
+          cardRef.current.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, [childClicked, place.id]);
+
     return(
         <>
-       <div className="bg-custom-gradient text-white ml-5 my-2 rounded-md p-3">
-   
+    
+       <div ref={cardRef} id={cardId} className={`bg-custom-gradient ${childClicked ? 'highlight-card' : ''} text-white ml-5 my-2 rounded-md p-3`}>
+
+
              <img src={place.image} alt={place.name}/>
           
        
