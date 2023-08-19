@@ -3,10 +3,9 @@ import Nomad from "./components/Nomad";
 import Home from "./components/Home";
 import NoPage from "./components/NoPage";
 import { apiFetch } from "./api";
-import CurrencyConverter from "./components/CurrencyConverter";
+import MyJournal from "./components/MyJournal";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { CurrencyExchange } from "@mui/icons-material";
 
 const App = () => {
   const [places, setPlaces] = useState([]);
@@ -15,10 +14,10 @@ const App = () => {
     apiFetch().then((data) => {
       if (data) {
         setPlaces(data);
-        console.log(data);
       }
     });
   }, []);
+
   return (
     <>
       <Header />
@@ -29,7 +28,7 @@ const App = () => {
             path="/nomad"
             element={<Nomad places={places} setPlaces={setPlaces} />}
           />
-          <Route path="/currency" element={<CurrencyConverter />} />
+          <Route path="/currency" element={<MyJournal />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

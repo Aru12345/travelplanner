@@ -15,16 +15,7 @@ const center = {
 };
 
 function Map({ places ,setChildClicked}) {
-  const scrollToCard = (index) => {
-    setChildClicked(index); // Set the childClicked state to the index of the clicked marker
-    const cardElement = document.getElementById(`card-${index}`);
-    if (cardElement) {
-      cardElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
+ 
   return (
     <div className="">
       <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
@@ -39,7 +30,7 @@ function Map({ places ,setChildClicked}) {
           center={center}
           zoom={2}
           minZoom={1}
-          onClick={scrollToCard}
+        
           
         >
           {places?.map((place, i) => (
@@ -49,10 +40,12 @@ function Map({ places ,setChildClicked}) {
               icon={{
                 url: place.image,
                 scaledSize: new window.google.maps.Size(50, 55), 
-              }}
-              title={place.name} 
+                
+              }
+            }
+
              zIndex={1000}
-             onClick={scrollToCard}
+             
             />
           ))}
         </GoogleMap>

@@ -1,6 +1,6 @@
 export const apiFetch = async () => {
   const url =
-    "https://nomad-list-cities.p.rapidapi.com/nomad-list?size=20&page=1&sort=desc&sort_by=overall_score";
+    "https://nomad-list-cities.p.rapidapi.com/nomad-list?size=30&page=1&sort=desc&sort_by=overall_score";
   const options = {
     method: "GET",
     headers: {

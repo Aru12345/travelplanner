@@ -14,10 +14,13 @@
     "autoprefixer": "^10.4.14",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
+    "get-google-fonts": "^1.2.2",
     "google-map-react": "^2.2.1",
+    "json-server": "^0.17.3",
     "postcss-cli": "^10.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-icons": "^4.10.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.7",
     "web-vitals": "^2.1.4"

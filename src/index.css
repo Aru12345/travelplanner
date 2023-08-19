@@ -22,3 +22,35 @@
   height: 100vh;
   /* Other background properties can be added here */
 }
+
+.omodal {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.modal-content {
+  background: linear-gradient(
+    138deg,
+    rgb(32, 201, 255) 36.7%,
+    rgb(0, 8, 187) 84.4%,
+    rgb(255, 255, 255) 119.7%
+  );
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  color: rgb(238, 238, 246);
+}
+
+.winterback {
+  background-image: url("mediaa/winter.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
