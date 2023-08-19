@@ -15,14 +15,6 @@
   border: 2px solid yellow; /* Example highlight style */
 }
 
-.bg-image {
-  background-image: url("mediaa/home.jpeg");
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  /* Other background properties can be added here */
-}
-
 .omodal {
   position: fixed;
   z-index: 9999;
@@ -47,10 +39,4 @@
   border-radius: 5px;
   max-width: 500px;
   color: rgb(238, 238, 246);
-}
-
-.winterback {
-  background-image: url("mediaa/winter.jpeg");
-  background-size: cover;
-  height: 100vh;
 }

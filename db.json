@@ -1,19 +1,13 @@
 {
-  "posts": [
+  "trips": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "destination": "Cairo",
+      "date": "09/12/2023",
+      "budget": "$3000",
+      "accomodation": "JW Marriott Hotel Cairo 3CFM+694, Ring Rd, Second New Cairo, Cairo Governorate 11757",
+      "notes": "Pyramids,museums,Red Sea diving"
+
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

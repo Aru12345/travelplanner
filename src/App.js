@@ -28,7 +28,7 @@ const App = () => {
             path="/nomad"
             element={<Nomad places={places} setPlaces={setPlaces} />}
           />
-          <Route path="/currency" element={<MyJournal />} />
+          <Route path="/journal" element={<MyJournal />} />
           <Route path="/*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>

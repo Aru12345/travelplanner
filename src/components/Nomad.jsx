@@ -3,7 +3,6 @@ import CardList from "./Cardlist";
 import Map from "./Map";
 import { useState } from "react";
 function Nomad({places, setPlaces}){
-  const [childClicked, setChildClicked] = useState(null);
     return(
         <>
         <div className="flex flex-col md:flex-row ">
@@ -11,12 +10,12 @@ function Nomad({places, setPlaces}){
           <div className=" mb-4  ">
        
            <div className="overflow-auto max-h-[670px] mt-3">
-             <CardList places={places} childClicked={childClicked}/>
+             <CardList places={places} />
             </div>
           </div>
          </div>
           <div className="w-[60%] pl-3% ml-2% m:w-[80%] sm:ml-[10%]  sm:h-[40%] max-sm:w-[90%] max-sm:ml-[4%]   ">
-            <Map  places={places}  setPlaces={setPlaces} setChildClicked={setChildClicked} /> 
+            <Map  places={places}  setPlaces={setPlaces} /> 
            </div>
        </div>
      </>

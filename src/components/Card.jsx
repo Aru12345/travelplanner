@@ -13,7 +13,7 @@ function Card ({place,cardId}){
   };
 
   const nav =(e) =>{
-    navigate('/currency')
+    navigate('/journal')
 
 
   }
