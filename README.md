@@ -10,7 +10,7 @@ As a user...
 - I want add a city I like to my Journal or delte it and plan a trip .
 - I want to be able to view the city pins on the map.
 
-![img1](mediaa/media.png)
+![img2](src/mediaa/media.png)
 
 # Futue Additions
 
