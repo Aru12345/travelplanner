@@ -40,3 +40,9 @@
   max-width: 500px;
   color: rgb(238, 238, 246);
 }
+.bg-image {
+  background-image: url("mediaa/home.jpeg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}

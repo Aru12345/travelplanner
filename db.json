@@ -1,13 +1,12 @@
 {
   "trips": [
     {
-      "id": 1,
       "destination": "Cairo",
-      "date": "09/12/2023",
-      "budget": "$3000",
-      "accomodation": "JW Marriott Hotel Cairo 3CFM+694, Ring Rd, Second New Cairo, Cairo Governorate 11757",
-      "notes": "Pyramids,museums,Red Sea diving"
-
+      "date": "2023-08-23",
+      "budget": "3000",
+      "accomodation": "Marriot hotel cairo",
+      "notes": "Pyramids Museums",
+      "id": 1
     }
   ]
 }
