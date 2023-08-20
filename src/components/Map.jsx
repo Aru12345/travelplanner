@@ -1,7 +1,6 @@
 import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
-
 const containerStyle = {
   width: "97%",
   height: "680px",
@@ -14,7 +13,7 @@ const center = {
   lng: 10, 
 };
 
-function Map({ places ,setChildClicked}) {
+function Map({ places,}) {
  
   return (
     <div className="">

@@ -142,22 +142,15 @@ function MyJournal() {
               className="bg-blue-600 text-white px-4 py-2 rounded-md" onClick={handleSubmit}
             >
               Add
-            </button>
-           
-            
+            </button>  
           </div>
           </form>
         </div>
        
       </div>
-
-      
       <div className="w-8.5  py-3 w-2/4 max-sm:w-[80%] max-sm:ml-[10%]  h-305 ">
-     
         <h1 className="text-lg font-semibold text-center    p-1">My Trips</h1>
           <div className="w-4/5  xs:w-full h-4/6 overflow-auto ">
-           
-          
            {trips.map((trip, i) => (
     <TripCard  trip={trip} key={i} onDelete={handleDelete} />
   ))}
