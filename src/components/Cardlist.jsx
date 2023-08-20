@@ -4,8 +4,7 @@ function CardList({ places }) {
     return (
       <div className=" "> 
         
-        {places.map((place, i) => (
-            
+        {places.map((place, i) => ( 
           <Card  place={place} key={i}  />
         ))}
       </div>

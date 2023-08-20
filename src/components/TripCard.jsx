@@ -3,7 +3,7 @@ import axios from "axios";
 function TripCard({trip, onDelete}){
     function deleteCard(){
         axios.delete(`http://localhost:3000/trips/${trip.id}`)
-  .then(response => {
+  .then(() => {
     onDelete(trip.id)
   })
   .catch(error => {

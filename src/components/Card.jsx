@@ -12,20 +12,14 @@ function Card ({place,cardId}){
     setIsModalOpen(false);
   };
 
-  const nav =(e) =>{
+  const nav =() =>{
     navigate('/journal')
-
-
   }
-
     return(
         <>
     
        <div  id={cardId} className={`bg-custom-gradient } text-white ml-5 my-2 rounded-md p-3`}>
        <img src={place.image} alt={place.name}/>
-          
-       
-      
        <h1>Name:{place.name}</h1>
        <h2>Country:{place.country}</h2>
         <h2>Region:{place.region}</h2>
@@ -48,7 +42,6 @@ function Card ({place,cardId}){
          <h2>Safety Level: {place.safety_level}</h2>
          <h2>Leisure Quality:{place.leisure_quality}</h2>
          <button onClick={nav}  className="bg-blue-700 px-3 m-1 rounded">Add to Journal</button>
-      
           </div>
         </div>
       )}
