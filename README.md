@@ -12,6 +12,6 @@ As a user...
 
 ![img2](src/mediaa/media.png)
 
-# Futue Additions
+# Future Additions
 
 I plan on building a comparison tool so that users can compare two or more cities and determine which  better fits their interest.
